@@ -20,11 +20,13 @@ signupform.addEventListener('submit', (event) => {
     if (checkPassword()) {
         console.log('same');
         password.classList.remove('invalid-input');
+        confirmpass.classList.remove('invalid-input');
+        errormsg.style.visibility = 'hidden';
     }else {
         password.classList.add('invalid-input');
         confirmpass.classList.add('invalid-input');
         password.blur();
-       errormsg.style.visibility = 'visible';
+        errormsg.style.visibility = 'visible';
     }
 })
 
