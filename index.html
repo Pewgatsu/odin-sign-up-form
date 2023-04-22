@@ -17,7 +17,7 @@
             <section class="logo">
 
                 <img src="assets/odin-lined.png" alt="logo">
-                <h1 class="page-title"> Coffee Compass </h1>
+                <h1 class="page-title"> Coffee Spot </h1>
 
             </section>
 
@@ -37,7 +37,7 @@
                
             </section>
             
-            <form action="">
+            <form action="" id="test-form">
 
           
                 <section class="sign-up-form">
@@ -47,33 +47,36 @@
                     <article class="sign-up">
 
                         <label class="form-group">
-                            <span>First name</span>
-                            <input type="text" class="fname" id="fname" placeholder="">
+                            <span class="field-label">First name</span>
+                            <input type="text" class="fname" id="fname" >
                         </label>
 
                         <label class="form-group">
-                            <span>Last name</span>
+                            <span class="field-label">Last name</span>
                             <input type="text" class="lname" id="lname" placeholder="">
                         </label>
 
                         <label class="form-group">
-                            <span>Email </span>
-                            <input type="text" class="email" id="email" placeholder="">
+                            <span class="field-label">Email </span>
+                            <input type="email" class="email" id="email" placeholder="">
                         </label>
 
                         <label class="form-group">
-                            <span>Phone</span>
-                            <input type="text" class="fname" id="fname" placeholder="">
+                            <span class="field-label">Phone</span>
+                            <input type="text" class="phone" id="phone" placeholder="">
                         </label>
 
                         <label class="form-group">
-                            <span>Password</span>
-                            <input type="text" class="fname" id="fname" placeholder="">
+                            <span class="field-label">Password</span>
+                            <input type="password" class="password" id="password" name="password" value="" required aria-invalid="true">
+                            <span class="error" id="errormsg">*Passwords do not match!</span>
                         </label>
 
                         <label class="form-group">
-                            <span>Confirm Password</span>
-                            <input type="text" class="fname" id="fname" placeholder="">
+                            <span class="field-label">Confirm Password</span>
+                            <input type="text" class="confirm-password" id="confirm-password" placeholder="">
+                            
+                            
                         </label>
                 
                         <!-- <button> Create account</button> -->
